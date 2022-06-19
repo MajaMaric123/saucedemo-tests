@@ -8,7 +8,7 @@ demoqa.com is a basic demosite provided by toolsqa.com to learn and practice Sel
 More details about approach and features to be tested and are to find in Test Plan.
 
 
-Used dependencies:
+**Used dependencies**
 
 <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
