@@ -5,7 +5,7 @@ demoqa.com is a basic demosite provided by toolsqa.com to learn and practice Sel
 
 **Test Plan**
 
-More details about approach and features to be tested and are to find in Test Plan.
+More details about approach and features to be tested and are to find in [Test Plan](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FMajaMaric123%2Fpokusaj%2Fmaster%2Fdox%2FDomacitestcase.xlsx&wdOrigin=BROWSELINK).
 
 
 **Used dependencies**

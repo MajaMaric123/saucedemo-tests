@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f02ccae4-cde1-448f-8eda-c86113fa3e83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test5pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test5pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test5pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test5pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test5pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test5pages/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test5pages/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test5pages/InventoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test5pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test5pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test5tests/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test5tests/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test5tests/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test5tests/Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
