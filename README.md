@@ -4,6 +4,10 @@ www.saucedemo.com
 
 SauceDemo is a website built by SauceLabs to practice automation testing.
 
+HOW TO USE
+
+Test suit can be performed into 3 different web browsers. Changing browser is possible in the setUp method in BaseTest. 
+To use Chrome web browser input "chrome" value and to use Edge browser input "edge" value.
 
 USED DEPENDENCIES
 
@@ -26,9 +30,3 @@ USED DEPENDENCIES
             <scope>provided</scope>
         </dependency>
 </dependencies>
-
-
-HOW TO USE
-
-Test suit can be performed into 3 different web browsers. Changing browser is possible in the setUp method in BaseTest. 
-To use Chrome web browser input "chrome" value and to use Edge browser input "edge" value.
