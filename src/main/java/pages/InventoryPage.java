@@ -1,24 +1,19 @@
-package test5pages;
+package pages;
 
+import lombok.Data;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-
-
+@Data
 public class InventoryPage extends BasePage {
 
-    private By burgerMenu = By.id("react-burger-menu-btn");
-    private By logout = By.id("logout_sidebar_link");
-    private By firstProduct = By.id("add-to-cart-sauce-labs-backpack");
-    private By secondProductDetails = By.id("item_0_title_link");
-    private By secondProductAddToCart = By.id("add-to-cart-sauce-labs-bike-light");
+    private By sauceLabsBackpackAddToCart = By.id("add-to-cart-sauce-labs-backpack");
+    private By sauceLabsBikeLightImage = By.id("item_0_img_link");
+    private By sauceLabsBikeLightAddToCart = By.id("add-to-cart-sauce-labs-bike-light");
     private By cartBadge = By.className("shopping_cart_badge");
-
-    private By removeButton = By.id("remove-sauce-labs-backpack");
-    private By cart = By.id("shopping_cart_container");
+    private By cartButton = By.id("shopping_cart_container");
 
 
     public InventoryPage(WebDriver driver, WebDriverWait driverWait) {
@@ -26,73 +21,53 @@ public class InventoryPage extends BasePage {
     }
 
     /**
-     * Find first product and click on Add to cart button
+     * Find Sauce Labs Backpack item and click on Add to cart button
      */
-    public WebElement getFirstProduct() {
-        return getDriver().findElement(firstProduct);
+    public WebElement getSauceLabsBackpackItem() {
+        return getDriver().findElement(sauceLabsBackpackAddToCart);
     }
 
-    public void addFirstProduct() {
-        getFirstProduct().click();
+    public void addSauceLabsBackpackItem() {
+        getSauceLabsBackpackItem().click();
     }
 
     /**
-     * Find Click button and click on it
-     */
-    public WebElement getCart() {
-        return getDriver().findElement(cart);
-    }
-
-    public void clickCart() {
-        getCart().click();
-    }
-
-    /**
-     * Find Burger Menu and click on it
-     */
-    public WebElement getBurgerMenu() {
-        return getDriver().findElement(burgerMenu);
-    }
-
-    public void clickBurgerMenu() {
-        getBurgerMenu().click();
-    }
-
-    /**
-     * Confirm that is visible Cart Badge after click on Add to cart button
+     * Confirm that is visible Cart Badge after add Sauce Labs Backpack to the cart
      */
     public boolean isVisibleCartBadge() {
         return getDriver().findElement(cartBadge).isDisplayed();
     }
 
     /**
-     * Confirm that is visible Logout button after Login
+     * Find Sauce Labs Bike Light item and click on the image link to open product details
      */
-    public boolean isVisibleLogout() {
-        clickBurgerMenu();
-        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-        return getDriver().findElement(logout).isDisplayed();
+    public WebElement getSauceLabsBikeLightImage() {
+        return getDriver().findElement(sauceLabsBikeLightImage);
+    }
+
+    public void openSauceLabsBikeLightDetails() {
+        getSauceLabsBikeLightImage().click();
     }
 
     /**
-     * Find second product and click on name to open product details
+     * Find Add to cart button for Sauce Labs Bike Light item and on click on it
      */
-    public WebElement getSecondProductDetails() {
-        return getDriver().findElement(secondProductDetails);
+    public WebElement getSauceLabsBikeLightAddToCart() {
+        return getDriver().findElement(sauceLabsBikeLightAddToCart);
     }
 
-    public void clickSecondProductDetails() {
-        getSecondProductDetails().click();
+    public void addSauceLabsBikeLightItem() {
+        getSauceLabsBikeLightAddToCart().click();
     }
 
     /**
-     * Find second product Add to cart button on click on it
+     * Find Cart button and click on it
      */
-    public WebElement getSecondProductAddToCart() {
-        return getDriver().findElement(secondProductAddToCart);
+    public WebElement getCartButton() {
+        return getDriver().findElement(cartButton);
     }
 
-    public void clickSecondProductAddToCart() {
-        getSecondProductAddToCart().click();
+    public void openCart() {
+        getCartButton().click();
     }
 }

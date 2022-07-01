@@ -1,30 +1,33 @@
-**DEMOQA.COM TESTS**
+SAUCEDEMO END TO END TESTING
 
-demoqa.com is a basic demosite provided by toolsqa.com to learn and practice Selenium.
+www.saucedemo.com
 
-
-**Test Plan**
-
-More details about approach and features to be tested and are to find in Test Plan.
+SauceDemo is a website built by SauceLabs to practice automation testing.
 
 
-**Used dependencies**
+USED DEPENDENCIES
 
-<dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>4.1.4</version>
-</dependency>
+<dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.0</version>
+            <scope>provided</scope>
+        </dependency>
+</dependencies>
 
-<dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.6.0</version>
-</dependency>
+HOW TO USE
 
-<dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.18.0</version>
-      <scope>provided</scope>
-</dependency>
+Test suit can be performed into 3 different web browsers. Changing browser is possible in the setUp method in BaseTest. 
+To use Chrome web browser input "chrome" value and to use Edge browser input "edge" value.

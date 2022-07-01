@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f02ccae4-cde1-448f-8eda-c86113fa3e83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/InventoryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tests/SauceDemoTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_19_2022_11_40_AM_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dox/Domacitestcase.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test5pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test5pages/CartPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test5pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test5pages/InventoryPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test5pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test5tests/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test5tests/Tests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,49 +51,151 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Maja/Selenijum/Zadaci Selenijum/SelenijumTest"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Maja/Selenijum/ApiTesting",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.Tests">
-    <configuration name="Tests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.SauceDemoTests">
+    <configuration name="D:/Maja/Selenijum/Zadaci Selenijum/SelenijumTest/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SelenijumTest" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="LaunchBrowser.Before.Run" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SauceDemoTests" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="SelenijumTest" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test5tests.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test5tests" />
-      <option name="MAIN_CLASS_NAME" value="test5tests.Tests" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SauceDemoTests" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.verifyAddProductToCart" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SauceDemoTests.verifyAddProductToCart" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SelenijumTest" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test5tests.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test5tests" />
-      <option name="MAIN_CLASS_NAME" value="test5tests.Tests" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SauceDemoTests" />
       <option name="METHOD_NAME" value="verifyAddProductToCart" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SauceDemoTests.verifyThatTheCartBadgeIsUpdatedCorrectly" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SelenijumTest" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SauceDemoTests" />
+      <option name="METHOD_NAME" value="verifyThatTheCartBadgeIsUpdatedCorrectly" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="SelenijumTest" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.&lt;default&gt;" />
+      <item itemvalue="TestNG.D:/Maja/Selenijum/Zadaci Selenijum/SelenijumTest/testng.xml" />
+      <item itemvalue="TestNG.SauceDemoTests" />
+      <item itemvalue="TestNG.SauceDemoTests.verifyAddProductToCart" />
+      <item itemvalue="TestNG.SauceDemoTests.verifyThatTheCartBadgeIsUpdatedCorrectly" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Tests" />
-        <item itemvalue="TestNG.Tests.verifyAddProductToCart" />
+        <item itemvalue="TestNG.SauceDemoTests" />
+        <item itemvalue="TestNG.D:/Maja/Selenijum/Zadaci Selenijum/SelenijumTest/testng.xml" />
+        <item itemvalue="TestNG.&lt;default&gt;" />
+        <item itemvalue="TestNG.SauceDemoTests.verifyThatTheCartBadgeIsUpdatedCorrectly" />
+        <item itemvalue="TestNG.SauceDemoTests.verifyAddProductToCart" />
       </list>
     </recent_temporary>
   </component>
@@ -102,5 +220,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SelenijumTest$SauceDemoTests.ic" NAME="SauceDemoTests Coverage Results" MODIFIED="1656678487023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SelenijumTest$_default_.ic" NAME="&lt;default&gt; Coverage Results" MODIFIED="1656676575894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SelenijumTest$D__Maja_Selenijum_Zadaci_Selenijum_SelenijumTest_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1656677932306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

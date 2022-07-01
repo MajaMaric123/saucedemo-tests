@@ -1,64 +1,46 @@
-package test5pages;
+package pages;
 
+import lombok.Data;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CheckoutPage extends BasePage{
+@Data
+public class CheckoutPage extends BasePage {
 
-    private By checkoutTable = By.xpath("//*[@id=\"checkout_info_container\"]/div/form/div[1]");
-    private By firstName = By.id("first-name");
-    private By lastName = By.id("last-name");
-    private By zipCode =By.id("postal-code");
+    private By firstNameField = By.id("first-name");
+    private By lastNameField = By.id("last-name");
+    private By zipCodeField = By.id("postal-code");
     private By continueButton = By.id("continue");
-    private By checkoutCompleteMessage = By.className("complete-header");
-    private By itemTotal = By.xpath("//*[@id=\"cart_contents_container\"]/div/div[1]/div[3]/div[2]/div[2]/div");
-    private By checkoutTotal = By.xpath("//*[@id=\"checkout_summary_container\"]/div/div[2]/div[5]");
     private By finishButton = By.id("finish");
+    private By checkoutCompleteMessage = By.className("complete-header");
     private By burgerMenu = By.id("react-burger-menu-btn");
-    private By logout = By.id("logout_sidebar_link");
+    private By logoutButton = By.id("logout_sidebar_link");
 
     public CheckoutPage(WebDriver driver, WebDriverWait driverWait) {
         super(driver, driverWait);
     }
 
     /**
-     * Confirm that is visible Checkout table
-     */
-    public boolean isVisibleCheckoutTable() {
-        return getDriver().findElement(checkoutTable).isDisplayed();
-    }
-
-    /**
      * Find firstname field
      */
-    public WebElement getFirstName() {
-        return getDriver().findElement(firstName);
+    public WebElement getFirstNameField() {
+        return getDriver().findElement(firstNameField);
     }
 
     /**
      * Find lastname field
      */
-    public WebElement getLastName() {
-        return getDriver().findElement(lastName);
+    public WebElement getLastNameField() {
+        return getDriver().findElement(lastNameField);
     }
 
     /**
      * Find zip code field
      */
-    public WebElement getZipCode() {
-        return getDriver().findElement(zipCode);
-    }
-
-    /**
-     * Input Checkout form
-     */
-    public void inputCheckoutForm(String firstname, String lastname, String zipcode){
-        getFirstName().sendKeys(firstname);
-        getLastName().sendKeys(lastname);
-        getZipCode().sendKeys(zipcode);
-        clickContinueButton();
+    public WebElement getZipCodeField() {
+        return getDriver().findElement(zipCodeField);
     }
 
     /**
@@ -72,27 +54,29 @@ public class CheckoutPage extends BasePage{
         getContinueButton().click();
     }
 
-    public WebElement getCheckoutTotal() {
-        return getDriver().findElement(checkoutTotal);
-    }
-
-    public WebElement getItemTotal() {
-        return getDriver().findElement(itemTotal);
+    /**
+     * Input Checkout form
+     */
+    public void inputCheckoutForm(String firstname, String lastname, String zipcode) {
+        getFirstNameField().sendKeys(firstname);
+        getLastNameField().sendKeys(lastname);
+        getZipCodeField().sendKeys(zipcode);
+        clickContinueButton();
     }
 
     /**
      * Find Finish button and click on it
      */
-    public WebElement getFinish() {
+    public WebElement getFinishButton() {
         return getDriver().findElement(finishButton);
     }
 
-    public void clickFinish() {
-        getFinish().click();
+    public void clickFinishButton() {
+        getFinishButton().click();
     }
 
     /**
-     * Get text from the checkout complete message and compare it with the expected results
+     * Get text from the checkout complete message so that can be compared with expected results
      */
     public String confirmationCheckoutCompleteMessage() {
         return getDriver().findElement(checkoutCompleteMessage).getText();
@@ -112,11 +96,11 @@ public class CheckoutPage extends BasePage{
     /**
      * Find and click on Logout button
      */
-    public WebElement getLogout() {
-        return getDriver().findElement(logout);
+    public WebElement getLogoutButton() {
+        return getDriver().findElement(logoutButton);
     }
 
-    public void clickLogout() {
-        getLogout().click();
+    public void clickLogoutButton() {
+        getLogoutButton().click();
     }
 }

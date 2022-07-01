@@ -15,4 +15,11 @@
             </class>
         </classes>
     </test>
+    <test name="EdgeTest">
+        <parameter name="browser" value="Edge"/>
+        <classes>
+            <class name="tests.SauceDemoTests">
+            </class>
+        </classes>
+    </test>
 </suite>

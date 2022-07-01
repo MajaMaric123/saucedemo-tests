@@ -1,18 +1,21 @@
-package test5pages;
+package pages;
 
-import org.openqa.selenium.By;
+import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+@Getter
 public class BasePage {
 
     private WebDriver driver;
     private WebDriverWait driverWait;
-    private static final String CART_URL = "https://www.saucedemo.com/cart.html";
 
     public BasePage(WebDriver driver, WebDriverWait driverWait) {
         this.driver = driver;
         this.driverWait = driverWait;
+    }
+
+    public BasePage() {
     }
 
     public WebDriver getDriver() {
@@ -30,13 +33,4 @@ public class BasePage {
     public void setDriverWait(WebDriverWait driverWait) {
         this.driverWait = driverWait;
     }
-
-    public void refreshPage(){
-        driver.navigate().refresh();
-    }
-
-    public void openCartPage(){
-        driver.navigate().to(CART_URL);
-    }
-
 }

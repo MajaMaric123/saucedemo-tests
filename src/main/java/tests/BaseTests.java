@@ -1,19 +1,20 @@
-package test5tests;
+package tests;
 
+import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import test5pages.CartPage;
-import test5pages.CheckoutPage;
-import test5pages.InventoryPage;
-import test5pages.LoginPage;
+import org.testng.annotations.*;
+import pages.CartPage;
+import pages.CheckoutPage;
+import pages.InventoryPage;
+import pages.LoginPage;
 
 import java.time.Duration;
 
+@Getter
 public class BaseTests {
 
     private WebDriver driver;
@@ -25,9 +26,21 @@ public class BaseTests {
 
 
     @BeforeClass
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Petar\\Downloads\\chromedriver_win32(1)\\chromedriver.exe");
-        driver = new ChromeDriver();
+    @Parameters("browser")
+    public void setup(@Optional("firefox") String browser) throws Exception {
+        if (browser.equalsIgnoreCase("firefox")) {
+            System.setProperty("webdriver.gecko.driver", "D:\\Maja\\Alas\\driver\\geckodriver.exe");
+            driver = new FirefoxDriver();
+        } else if (browser.equalsIgnoreCase("chrome")) {
+            System.setProperty("webdriver.chrome.driver", "D:\\Maja\\Alas\\chromedriver\\chromedriver.exe");
+            driver = new ChromeDriver();
+        } else if (browser.equalsIgnoreCase("edge")) {
+            System.setProperty("webdriver.edge.driver", "D:\\Maja\\Alas\\edgedriver\\msedgedriver.exe");
+            driver = new EdgeDriver();
+        } else {
+            throw new Exception("Incorrect Browser");
+        }
+
         driver.manage().window().maximize();
         driver.navigate().to("https://www.saucedemo.com/");
 
@@ -41,14 +54,10 @@ public class BaseTests {
         this.checkoutPage = new CheckoutPage(driver, driverWait);
     }
 
-  /*  @BeforeMethod
-    public void beforeMethod(){
-
-    }*/
-/* @AfterClass
-    public void afterClass(){
+    @AfterClass
+    public void afterClass() {
         driver.close();
-    }*/
+    }
 
     public LoginPage getLoginPage() {
         return loginPage;
