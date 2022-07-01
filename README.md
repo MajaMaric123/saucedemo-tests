@@ -27,6 +27,7 @@ USED DEPENDENCIES
         </dependency>
 </dependencies>
 
+
 HOW TO USE
 
 Test suit can be performed into 3 different web browsers. Changing browser is possible in the setUp method in BaseTest. 
